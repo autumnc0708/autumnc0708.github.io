@@ -1,19 +1,33 @@
 <html>
 
-  <head>
-    <title>Hamburger Menu</title>
-    <script type="text/javascript">
+<head>
+  <title>Hamburger Menu</title>
+  <script type="text/javascript">
+    function openNav() {
+      console.log("I opened the menu");
+      var menuBox = document.getElementById("hamburgerMenu");
+      menuBox.style.display = 'block';
+    }
 
-    </script>
-  </head>
+    function closeNav() {
+      console.log("I closed the menu");
+      var menuBox = document.getElementById("hamburgerMenu");
+      menuBox.style.display = 'none';
+    }
+  </script>
+</head>
 
-  <body>
-    <div id="hamburgerIcon">
-      ☰
+<body>
+  <div id="hamburgerIcon" onclick="openNav()">
+    ☰
+  </div>
+  <div id="hamburgerMenu">
+    <div id="closeMenu" onclick="closeNav()">
+      X
     </div>
-    <div id="hamburgerMenu">
-    </div>
-    <p>I like to eat hamburgers.</p>
-  </body>
+  </div>
+    <a href="index.html">Home</a>
+  <p>I like to eat hamburgers.</p>
+</body>
 
 </html>
