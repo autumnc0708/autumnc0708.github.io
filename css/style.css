@@ -1,132 +1,68 @@
-.thumbsBox {
-  width: 50%;
-  height: 50%;
-}
-
-.pTop {
-  position: absolute;
-  top: 0px;
-}
-
-.pBot {
-  position: absolute;
-  bottom: 0px;
-}
-
-.pLeft {
-  position: absolute;
-  left 0px;
-}
-
-.pRight {
-  position: absolute;
-  right: 0px;
-}
-
-#tUp {
-  background-color: #00FF00;
-  border: 4px solid black;
-  font-family: Arial;
-  text-align: center;
-  font-size: 100px;
-  color: white;
-}
-
-#tWiggle {
-  background-color: #00FFFF;
-  border: 4px solid black;
-  font-family: Arial;
-  text-align: center;
-  font-size: 100px;
-  color: white;
-}
-
-#tDown {
-  background-color: #FF0000;
-  border: 4px solid black;
-  font-family: Arial;
-  text-align: center;
-  font-size: 100px;
-  color: white;
-}
-
-#tOops {
-  background-color: #FFFF00;
-  border: 4px solid black;
-  font-family: Arial;
-  text-align: center;
-  font-size: 100px;
-  color: white;
-}
-
-#tUp:hover {
-  background-color: #c5ff8c
-}
-
-#tWiggle:hover {
-  background-color: #73FFFF
-}
-
-#tDown:hover {
-  background-color: #FF4D4D
-}
-
-#tOops:hover {
-  background-color: #FFFF80
-}
-
-#content {
-  border: 2px solid d8bfd8;
-}
-
-div {
-  border: 4px double #f0f0f5;
-}
-
 body {
-  border: 4px solid #f0f0f5;
+  background-color: white;
 }
 
 #headerBox {
-  margin: 30px;
-  border-bottom: solid 1px #f0f0f5;
-  background-color: #d8bfd8;
-  font-family: 'Cormorant';
-  font-size: 17px;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
 }
 
-#navBox {
-  border: 2px solid #000000;
+#content {
+  margin: auto;
   padding: 10px;
+  border: 5px solid black;
+  border-radius: 25px;
+  width: 1200px;
+  height: 2000px;
+  background-color: #ffffb3;
+  float: inherit;
 }
 
-.navBox {
+#menuBox {
+  border: 1px solid black;
+  margin: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.child {
-  display: inline;
+.blogBox {
+  overflow: auto;
+  margin: 35px;
+  text-align: right;
+  float: inherit;
+  border: 2px solid black;
+  text-indent: inherit;
 }
 
-.paraBox {
-  border: 3px double #f0f0f5;
-  margin: 20px;
-  background-color: #d8bfd8;
+p {
+  font-size: 15px;
+  float: inherit;
+  font-family: Verdana;
+  font-style: italic;
+  color: #black;
+  text-align: center;
 }
 
-h1 {
+.blogBox {
+  border: 2px solid black: width: 1200px;
+  float: center;
   font-family: "Brush Script MT", cursive;
   font-style: italic;
-  color: #ba55d3;
-  text-shadow: 2px 2px #dda0dd;
+  color: 333333;
+  text-shadow: 2px black;
   font-size: 45px;
 }
 
-h2 {
-  font-style: italic;
-  font-size: 30px;
-  color: #ba55d3;
-  text-shadow: 2px 2px #dda0dd;
+.blogBox {}
+
+  img {
+    width: 150px;
+    height: 130px;
+  }
+
+div {
+  border: 2px solid black: padding: 20px;
+  background-color: #ffffcc;
 }
