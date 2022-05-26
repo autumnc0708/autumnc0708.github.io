@@ -34,6 +34,7 @@ body {
   float: inherit;
   border: 2px solid black;
   text-indent: inherit;
+  overflow: auto;
 }
 
 p {
@@ -47,15 +48,13 @@ p {
 
 .blogBox {
   border: 2px solid black: width: 1200px;
-  float: center;
   font-family: "Brush Script MT", cursive;
   font-style: italic;
   color: 333333;
   text-shadow: 2px black;
   font-size: 45px;
+  overflow: auto;
 }
-
-.blogBox {}
 
   img {
     width: 150px;
