@@ -1,54 +1,185 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Autumn Website</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/functions.js" charset="utf-8"></script>
+<title>House of Usher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
 
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img1.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 </head>
-
 <body>
-  <div id="content">
-    <div id="headerBox">
-      <h1>Autumn's Website</h1>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
-    <div id="menuBox">
-      <div class="linkBox">
-        <a href="index.html">Home</a>
-      </div>
-      <div class="linkBox">
-        <a href="about.html">About</a>
-      </div>
-      <div class="linkBox">
-        <a href="www/index.html">Game</a>
-      </div>
-      <div class="linkBox">
-        <a href="https://www.bible.com/">Bible</a>
-      </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">AVAILABILITY</a>
     </div>
-    <div class="blogBox">
-      <img src="websiteimg1.png" alt="Cactus">
-      “Therefore I tell you, do not worry about your life, what you will eat or
-      drink; or about your body, what you will wear. Is not life more than food,
-      and the body more than clothes?
-      Matthew 6:25 (NIV)
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">GHOST TOUR</a>
     </div>
-    <div class="blogBox">
-      <img src="websiteimg2.png" alt="Boots" style="float: right;">
-      <p>And so, young people, give yourself to the Bible. Give yourself to know
-        the Bible. It will sometimes seem flat emotionally. It will sometimes
-        feel like soaring emotionally. Those two ups and downs are not the issue.
-        It is steady state, long term, occupation with the infallible, powerful
-        word of God that will make oaks of righteousness out of young people
-        when the winds blow. It is wonderful to have these times of worship.
-        We need them. We need them. But we all know that these are the high
-        times. These are the glorious times and the slog it out times are the
-        times that tell whether you have got fiber in your tree or whether you
-        only a week sapling and get blown over.</p>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">GHOST HUNT</a>
+    </div>
     </div>
   </div>
-</body>
+</div>
 
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open 24 hours...</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:60px">The House of Usher<br>    </span>
+    <span class="w3-text-white" style="font-size:30px">Bed & Breakfast</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">1620 SW Park Ave</span>
+  </div>
+</header>
+
+<div class="w3-sand w3-grayscale w3-large">
+
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Availability</span></h5>
+
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Rooms</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Suites</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <img src="img2.png" alt="img2" style="float: right; width: 150px; length: 175px;">
+      <h5>Library</h5>
+      <p class="w3-text-grey">Rent from 7AM to 11PM. Best for get-togethers and parties.</p><br>
+
+      <img src="img3.png" alt="img3" style="float: right; width: 150px; length: 175px;">
+      <h5>Dining Room</h5>
+      <p class="w3-text-grey">Rent from 9AM to 9PM, include a meal package.</p><br>
+
+      <img src="img5.jpg" alt="img5" style="float: right; width: 150px; length: 175px;">
+      <h5>Billiard Room</h5>
+      <p class="w3-text-grey">Rent from 8AM to 11PM. Best for get-togethers and parties.</p><br>
+
+      <img src="img6.png" alt="img6" style="float: right; width: 150px; length: 175px;">
+      <h5>Small Ballroom</h5>
+      <p class="w3-text-grey">Rent from 5PM to 11PM. 65' x 71'65"</p><br>
+
+      <img src="img7.png" alt="img7" style="float: right; width: 150px; length: 175px;">
+      <h5>Hearth Room</h5>
+      <p class="w3-text-grey">Rent 7AM to 10PM. Best for small gatherings, meetings.</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+
+      <img src="image1.jpg" alt="image1" style="float: right; width: 150px; length: 175px;">
+      <h5>Roderick Usher's Bedroom</h5>
+      <p class="w3-text-grey">Goes for $750 per night. Customers say they can feel Roderick's mumbling and discomfort as they sleep.</p><br>
+
+      <img src="image2.jpg" alt="image2" style="float: right; width: 150px; length: 175px;">
+      <h5>Madeline Usher's Bedroom</h5>
+      <p class="w3-text-grey">Goes for $800 per night. Sleep in the bed where Madeline was supposedly found dead.</p><br>
+
+      <img src="image3.jpg" alt="image3" style="float: right; width: 150px; length: 175px;">
+      <h5>Guest Bedroom</h5>
+      <p class="w3-text-grey">Goes for $600 per night. </p><br>
+    </div>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">GHOST TOUR</span></h5>
+    <p>The ghost tour takes you into the diary of Roderick Usher's best friend. You will experience the heartbreak of Madeline. Experience the psychotic episodes of Roerick. Experience the fear of the diary's writer.</p>
+    <p>The ghost hunt is availabe on weekdays only and $300 per hunt, the hunt lasts 4 and a half hours.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"I can't read the story the same!"</i></p>
+      <p>Customer: Morticia Adams</p>
+</div>
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">GHOST HUNT</span></h5>
+    <p>The Ghost Hunt is an exilerating chase for the ghosts of Madeline and Roderick Usher. The ghost hunt is $200 for a 3 hour experience. Many have claimed to change after seeing the ghosts of the one and only owners of the House of Usher.</p>
+    <p>In addition to our hunt, we offer a copy of diary of Roderick Usher's best friend. The diary tells the tale of the one and only gothic tale behind the House of Usher.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"It was exilerating! I could really see the ghosts! The story all came togther and I was moved, in a good and bad way..."</i></p>
+      <p>Reviewer, Blog Owner: Linda Ligwham</p>
+    </div>
+    <p><strong>Opening hours:</strong> everyday, all day.</p>
+    <p><strong>Address:</strong> 1620 SW Park Ave</p>
+
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+      <p>Find us at 1620 SW Park Avenue.</p>
+      <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+      <p><strong>Reserve</strong> a room, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <a href="about.html" class="w3-button w3-black" role="button">SEND MESSAGE</a>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Website created by Autumn Cole of York County School of Technology.</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
 </html>

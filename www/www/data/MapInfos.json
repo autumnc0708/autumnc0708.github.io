@@ -1,9 +1,0 @@
-[
-null,
-{"id":1,"expanded":true,"name":"oHouse","order":1,"parentId":0,"scrollX":788,"scrollY":481},
-{"id":2,"expanded":false,"name":"iHouse","order":2,"parentId":1,"scrollX":788,"scrollY":481},
-{"id":3,"expanded":false,"name":"Basement","order":5,"parentId":0,"scrollX":832,"scrollY":640},
-{"id":4,"expanded":true,"name":"Campground","order":3,"parentId":0,"scrollX":2701.7142857142853,"scrollY":1649.142857142857},
-{"id":5,"expanded":true,"name":"MAP005","order":6,"parentId":0,"scrollX":2674.285714285714,"scrollY":1710.8571428571427},
-{"id":6,"expanded":false,"name":"Campground Dungeon","order":4,"parentId":4,"scrollX":1454,"scrollY":2322}
-]
